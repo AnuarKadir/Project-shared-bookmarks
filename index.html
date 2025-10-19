@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="script.mjs"></script>
+    <title>Shared Bookmarks</title>
+  </head>
+  <body>
+    <header><h1>Shared Bookmarks</h1></header>
+    <main>
+      <section>
+        <label for="user-dropdown">Select a user:</label>
+        <select id="user-dropdown" aria-label="Select user to view bookmarks">
+          <option value="">Choose a user</option>
+        </select>
+      </section>
+      <section id="bookmarks-section">
+        <h2>Bookmarks</h2>
+        <div id="bookmarks-list"></div>
+      </section>
+      <section id="add-bookmark-section">
+        <h2>Add New Bookmark</h2>
+        <form id="bookmark-form">
+          <div>
+            <label for="bookmark-url">URL:</label>
+            <input
+              type="url"
+              id="bookmark-url"
+              name="url"
+              required
+              aria-required="true"
+              placeholder="https://" />
+          </div>
+          <div>
+            <label for="bookmark-title">Title:</label>
+            <input
+              type="text"
+              id="bookmark-title"
+              name="title"
+              required
+              aria-required="true"
+              placeholder="Bookmark title" />
+          </div>
+          <div>
+            <label for="bookmark-description">Description:</label>
+            <textarea
+              id="bookmark-description"
+              name="description"
+              required
+              aria-required="true"
+              rows="4"
+              placeholder="Brief description of the bookmark"></textarea>
+          </div>
+          <button type="submit">Add Bookmark</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
