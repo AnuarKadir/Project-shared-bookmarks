@@ -2,6 +2,7 @@
   "name": "project-shared-bookmarks",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "storage.js",
   "scripts": {
     "start": "http-server . -c-1 -p 3000",
