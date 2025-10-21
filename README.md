@@ -40,4 +40,4 @@ npm test
 
 ## Deployment
 
-This project is deployed at: [Your deployed URL here]
+This project is deployed at: https://sharedbookmarksanuar.netlify.app/
