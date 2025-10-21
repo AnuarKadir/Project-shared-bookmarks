@@ -17,9 +17,11 @@
       </section>
       <section id="bookmarks-section">
         <h2>Bookmarks</h2>
-        <div id="bookmarks-list"></div>
+        <div id="bookmarks-list">
+          <p>Please select a user from the dropdown above.</p>
+        </div>
       </section>
-      <section id="add-bookmark-section">
+      <section id="add-bookmark-section" hidden>
         <h2>Add New Bookmark</h2>
         <form id="bookmark-form">
           <div>
@@ -32,7 +34,6 @@
               aria-required="true"
               placeholder="https://" />
           </div>
-          <br />
           <div>
             <label for="bookmark-title">Title:</label>
             <input
@@ -43,10 +44,8 @@
               aria-required="true"
               placeholder="Bookmark title" />
           </div>
-          <br />
           <div>
             <label for="bookmark-description">Description:</label>
-            <br />
             <textarea
               id="bookmark-description"
               name="description"

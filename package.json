@@ -2,10 +2,14 @@
   "name": "project-shared-bookmarks",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "storage.js",
   "scripts": {
     "start": "http-server . -c-1 -p 3000",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   },
   "repository": {
     "type": "git",

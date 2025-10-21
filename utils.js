@@ -25,13 +25,3 @@ export function sortBookmarksByDate(bookmarks) {
     return dateB - dateA; // Descending order (newest first)
   });
 }
-
-// Validate URL format
-export function isValidUrl(urlString) {
-  try {
-    const url = new URL(urlString);
-    return url.protocol === "http:" || url.protocol === "https:";
-  } catch (e) {
-    return false;
-  }
-}
