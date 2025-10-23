@@ -8,7 +8,6 @@ let currentUser = "";
 function init() {
   populateUserDropdown();
   setupEventListeners();
-  hideBookmarksAndForm();
 }
 
 // Populate the user dropdown with user IDs
@@ -37,23 +36,17 @@ function handleUserChange(e) {
   currentUser = e.target.value;
   if (currentUser) {
     displayBookmarks(currentUser);
-    showAddBookmarkForm();
   } else {
-    hideBookmarksAndForm();
+    showSelectUserMessage();
   }
 }
-function showAddBookmarkForm() {
-  document.getElementById("add-bookmark-section").hidden = false;
-}
 
-function hideBookmarksAndForm() {
+function showSelectUserMessage() {
   const list = document.getElementById("bookmarks-list");
   list.innerHTML = "";
   const p = document.createElement("p");
   p.textContent = "Please select a user from the dropdown above.";
   list.appendChild(p);
-
-  document.getElementById("add-bookmark-section").hidden = true;
 }
 
 // Display bookmarks for the selected user
